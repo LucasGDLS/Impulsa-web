@@ -1,0 +1,25 @@
+/* Contact Form */
+form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #1D4ED8; /* Blue color */
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1E40AF; /* Darker blue on hover */
+  }
+  
+  /* Contact Icons */
+  img {
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
+  

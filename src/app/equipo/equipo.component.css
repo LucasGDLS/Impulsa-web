@@ -1,0 +1,78 @@
+/* Carrusel Container */
+#carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Carrusel Items */
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(100%); /* Start offscreen to the right */
+}
+
+/* Show the current item */
+.carousel-item.active {
+  transform: translateX(0);
+}
+
+/* Hide the previous item (moving out to the left) */
+.carousel-item.left {
+  transform: translateX(-100%);
+}
+
+/* Show the next item (coming in from the right) */
+.carousel-item.right {
+  transform: translateX(100%);
+}
+
+/* Fondo de la sección de presentación */
+.bg-with-stripes {
+  height: 330px; /* Ajusta la altura según tus necesidades */
+}
+
+/* Estilo unificado para los botones del carrusel */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5); /* Fondo blanco con opacidad */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10; /* Asegura que los botones estén por encima del contenido del carrusel */
+}
+
+.carousel-button:hover {
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco más sólido al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+.carousel-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.carousel-button span {
+  display: none; /* Ocultar el texto accesible si no se necesita */
+}
+
+/* Posicionamiento específico para los botones de navegación */
+#prev-btn {
+  left: 32px;
+}
+
+#next-btn {
+  right: 32px;
+}

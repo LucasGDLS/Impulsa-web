@@ -5,8 +5,3 @@
 :root{
     color-scheme: black;
 }
-
-body{
-    @apply bg-white
-
-}

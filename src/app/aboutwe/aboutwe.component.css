@@ -1,0 +1,32 @@
+/* Estilos adicionales para la sección "aboutwe" */
+#aboutwe img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#aboutwe img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
+}
+
+#aboutwe .text-center {
+    text-align: center;
+}
+
+#aboutwe .text-left {
+    text-align: left;
+}
+
+#aboutwe .font-bold {
+    font-weight: 700; /* Hace el texto más prominente */
+}
+
+#aboutwe .shadow-lg {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más suave y moderna para la imagen */
+}
+
+#aboutwe .md\:pl-8 {
+    padding-left: 2rem; /* Agrega padding en el lado izquierdo en pantallas medianas y grandes */
+}
+
+#aboutwe .mb-8 {
+    margin-bottom: 2rem; /* Aumenta el espacio debajo de la imagen */
+}
