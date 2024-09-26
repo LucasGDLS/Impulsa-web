@@ -10,10 +10,11 @@ import { VisionComponent } from './vision/vision.component';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { FootComponent } from './foot/foot.component';
+import { BotonwhatappsComponent } from './botonwhatapps/botonwhatapps.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, BannerComponent, AboutweComponent, EquipoComponent, ServiciosComponent,VisionComponent,TecnologiasComponent,FormularioComponent,FootComponent],
+  imports: [RouterOutlet, HeaderComponent, BannerComponent, AboutweComponent, EquipoComponent, ServiciosComponent,VisionComponent,TecnologiasComponent,FormularioComponent,FootComponent,BotonwhatappsComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

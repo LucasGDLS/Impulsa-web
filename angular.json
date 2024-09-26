@@ -91,7 +91,13 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "project": "your-firebase-project-id",
+            "public": "dist/impulsa-web",
+            "branch": "gh-pages",
+            "repo": "https://github.com/LucasGDLS/Impulsa-web.git"
+          }
         }
       }
     }

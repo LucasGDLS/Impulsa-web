@@ -1,51 +1,71 @@
 <section class="bg-gray-100 py-24 px-4 lg:px-16" id="contacto">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl font-Nunito font-bold text-gray-900 mb-12">Contacto</h1>
-      
-      <!-- Contact Form -->
-      <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
-        <form action="mailto:tu-email@dominio.com" method="post" enctype="text/plain">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="mb-4">
-              <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre</label>
-              <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-lg py-2 px-4">
+    <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row items-start">
+            
+            <!-- Contact Text and Icons -->
+            <div class="w-full lg:w-1/2 lg:pr-8">
+                <h1 class="text-4xl md:text-5xl font-Nunito font-bold text-gray-900 mb-6 text-center lg:text-left">Contacto</h1>
+                <p class="text-gray-700 text-lg md:text-xl mb-8 text-center lg:text-left">
+                    Si deseas nuestros servicios, por favor completa el formulario o contáctanos utilizando las opciones que te proporcionamos abajo.
+                </p>
+                <!-- Contact Icons in 2x2 Grid -->
+                <div class="grid grid-cols-2 gap-8 mb-12">
+                    <div class="flex flex-col items-center font-bold">
+                        <img src="images/mail.png" alt="Email" class="w-16 h-16 mb-2">
+                        <span class="text-gray-700 font-sans text-center">Email<br>contacto&#64;impulsapartners.com.ar</span>
+                    </div>
+                    <div class="flex flex-col items-center font-bold text-center">
+                        <img src="images/horario.png" alt="Horarios" class="w-16 h-16 mb-2">
+                        <span class="text-gray-700 font-sans">Horarios<br>Lunes a viernes de 8:00 a 20:00<br>Sábado de 9:00 a 13:00 </span>
+                    </div>
+                    <div class="flex flex-col items-center font-bold text-center">
+                        <img src="images/ubicacion.png" alt="Ubicación" class="w-16 h-16 mb-2">
+                        <span class="text-gray-700 font-sans text-center">Ubicación<br>Buenos Aires</span>
+                    </div>
+                    <div class="flex flex-col items-center font-bold text-center font-bold">
+                        <img src="images/tel.png" alt="Teléfono" class="w-16 h-16 mb-2">
+                        <span class="text-gray-700 font-sans">
+                            Teléfono<br>
+                            <a href="https://wa.me/5491133946642" target="_blank" class="text-blue-500 hover:underline">+5491133946642</a>
+                        </span>
+                    </div>                    
+                </div>
             </div>
-            <div class="mb-4">
-              <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico</label>
-              <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg py-2 px-4">
+            
+            <!-- Contact Form -->
+            <div class="w-full lg:w-1/2">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <form action="mailto:tu-email@dominio.com" method="post" enctype="text/plain">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="mb-4">
+                                <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required class="w-full border border-gray-300 rounded-lg py-2 px-4">
+                            </div>
+                            <div class="mb-4">
+                                <label for="apellido" class="block text-gray-700 text-sm font-bold mb-2">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" required class="w-full border border-gray-300 rounded-lg py-2 px-4">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg py-2 px-4">
+                            </div>
+                            <div class="mb-4">
+                                <label for="pais" class="block text-gray-700 text-sm font-bold mb-2">País</label>
+                                <input type="text" id="pais" name="pais" required class="w-full border border-gray-300 rounded-lg py-2 px-4">
+                            </div>
+                            <div class="mb-4 col-span-2">
+                                <label for="asunto" class="block text-gray-700 text-sm font-bold mb-2">Asunto</label>
+                                <input type="text" id="asunto" name="asunto" required class="w-full border border-gray-300 rounded-lg py-2 px-4">
+                            </div>
+                            <div class="mb-4 col-span-2">
+                                <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required class="w-full border border-gray-300 rounded-lg py-2 px-4"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-700 text-white py-3 px-4 rounded-lg shadow-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300">Enviar</button>
+                    </form>
+                </div>
             </div>
-            <div class="mb-4">
-              <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Celular</label>
-              <input type="tel" id="phone" name="phone" required class="w-full border border-gray-300 rounded-lg py-2 px-4">
-            </div>
-            <div class="mb-4 col-span-2">
-              <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensaje</label>
-              <textarea id="message" name="message" rows="4" required class="w-full border border-gray-300 rounded-lg py-2 px-4"></textarea>
-            </div>
-          </div>
-          <button type="submit" class="w-full bg-blue-700 text-white py-3 px-4 rounded-lg shadow-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300">Enviar</button>
-        </form>
-      </div>
-  
-      <!-- Contact Icons -->
-      <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-8">
-        <div class="flex flex-col items-center">
-          <img src="images/mail.png" alt="Email" class="w-16 h-16 mb-2">
-          <span class="text-gray-700 font-sans">Email</span>
         </div>
-        <div class="flex flex-col items-center">
-          <img src="images/horario.png" alt="Horario" class="w-16 h-16 mb-2">
-          <span class="text-gray-700 font-sans">Horarios</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="images/ubicacion.png" alt="Ubicación" class="w-16 h-16 mb-2">
-          <span class="text-gray-700 font-sans">Ubicación</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="images/tel.png" alt="Teléfono" class="w-16 h-16 mb-2">
-          <span class="text-gray-700 font-sans">Teléfono</span>
-        </div>
-      </div>
     </div>
-  </section>
-  
+</section>
